@@ -11,3 +11,9 @@ brownie console --newtork Goerli_test
 account = account.add('privatekey')
 accounts[0].deploy(ConstructorName)
 ```
+
+## Some notes
+For bsc-test your must deploy using custom gas
+```python
+Greeter.deploy({'gas':20000000, 'gas_price':20000000000,'from': a[0]})
+```
